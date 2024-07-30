@@ -1,3 +1,4 @@
+package Banco;
 
 public interface IConta {
 	

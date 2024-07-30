@@ -1,3 +1,5 @@
+package Banco;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -61,7 +63,7 @@ public abstract class Conta implements IConta {
 		System.out.println("Saldo atual: " + saldo + "\n");
 	}
 
-		public List<Transacao> getHistoricoTransacoes() {
+	public List<Transacao> getHistoricoTransacoes() {
 		return Collections.unmodifiableList(historicoTransacoes);
 	}
 
@@ -90,7 +92,7 @@ public abstract class Conta implements IConta {
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta ===");
+		System.out.println("=== Extrato Banco.Conta ===");
 		imprimirInfosComuns();
 	}
 }
